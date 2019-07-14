@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A51AEC6122DB0E6D00472924 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A51AEC6022DB0E6D00472924 /* LaunchImage.png */; };
 		A57E52AC22D9CD89007C3868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57E52AB22D9CD89007C3868 /* AppDelegate.swift */; };
 		A57E52B122D9CD89007C3868 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57E52AF22D9CD89007C3868 /* Main.storyboard */; };
 		A57E52B322D9CD8A007C3868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57E52B222D9CD8A007C3868 /* Assets.xcassets */; };
 		A57E52B622D9CD8A007C3868 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57E52B422D9CD8A007C3868 /* Splash.storyboard */; };
 		A57E52C122D9CD8A007C3868 /* ToursReviewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57E52C022D9CD8A007C3868 /* ToursReviewsTests.swift */; };
 		A57E52CD22D9D3C4007C3868 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57E52CC22D9D3C4007C3868 /* SplashViewController.swift */; };
-		A57E52D022D9D4EF007C3868 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A57E52CF22D9D4EE007C3868 /* LaunchImage.png */; };
 		A57E52DA22D9D6E1007C3868 /* TRListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57E52D922D9D6E1007C3868 /* TRListAssembly.swift */; };
 		A57E52DC22D9D781007C3868 /* TRListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57E52DB22D9D781007C3868 /* TRListInteractor.swift */; };
 		A57E52DE22D9D7BC007C3868 /* TRListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57E52DD22D9D7BC007C3868 /* TRListPresenter.swift */; };
@@ -48,6 +48,7 @@
 		06A407EE723DB336ABAE3884 /* Pods-ToursReviews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToursReviews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToursReviews/Pods-ToursReviews.debug.xcconfig"; sourceTree = "<group>"; };
 		35878805B93E4F7CE59BF6DA /* Pods_ToursReviewsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToursReviewsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A11A4333160B85140B0E1A7F /* Pods-ToursReviewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToursReviewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToursReviewsTests/Pods-ToursReviewsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A51AEC6022DB0E6D00472924 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
 		A57E52A822D9CD89007C3868 /* ToursReviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToursReviews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57E52AB22D9CD89007C3868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A57E52B022D9CD89007C3868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,7 +59,6 @@
 		A57E52C022D9CD8A007C3868 /* ToursReviewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursReviewsTests.swift; sourceTree = "<group>"; };
 		A57E52C222D9CD8A007C3868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A57E52CC22D9D3C4007C3868 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		A57E52CF22D9D4EE007C3868 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LaunchImage.png; path = ../../../../Desktop/LaunchImage.png; sourceTree = "<group>"; };
 		A57E52D922D9D6E1007C3868 /* TRListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRListAssembly.swift; sourceTree = "<group>"; };
 		A57E52DB22D9D781007C3868 /* TRListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRListInteractor.swift; sourceTree = "<group>"; };
 		A57E52DD22D9D7BC007C3868 /* TRListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRListPresenter.swift; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 		A57E52CB22D9D3A6007C3868 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				A57E52CF22D9D4EE007C3868 /* LaunchImage.png */,
+				A51AEC6022DB0E6D00472924 /* LaunchImage.png */,
 				A57E52CC22D9D3C4007C3868 /* SplashViewController.swift */,
 			);
 			path = Splash;
@@ -359,9 +359,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A57E52D022D9D4EF007C3868 /* LaunchImage.png in Resources */,
 				A57E52B622D9CD8A007C3868 /* Splash.storyboard in Resources */,
 				A57E52FC22DA1F7B007C3868 /* TRTableCell.xib in Resources */,
+				A51AEC6122DB0E6D00472924 /* LaunchImage.png in Resources */,
 				A57E530122DA5063007C3868 /* TRLoaderTableCell.xib in Resources */,
 				A57E52B322D9CD8A007C3868 /* Assets.xcassets in Resources */,
 				A57E52B122D9CD89007C3868 /* Main.storyboard in Resources */,

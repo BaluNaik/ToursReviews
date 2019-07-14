@@ -30,7 +30,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6Zt-pL-rfC">
-                                <rect key="frame" x="10" y="26" width="73" height="25"/>
+                                <rect key="frame" x="10" y="21" width="73" height="25"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyL-uW-Ojw">
                                         <rect key="frame" x="0.0" y="0.0" width="31.5" height="25"/>
@@ -50,7 +50,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jED-PF-22g">
-                                <rect key="frame" x="10" y="56" width="404" height="119.5"/>
+                                <rect key="frame" x="10" y="51" width="404" height="124.5"/>
                                 <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="12"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -92,14 +92,14 @@
                             <constraint firstAttribute="trailing" secondItem="lKd-rG-vxa" secondAttribute="trailing" constant="10" id="9sL-5o-Hqk"/>
                             <constraint firstItem="trg-gA-SOP" firstAttribute="top" secondItem="jED-PF-22g" secondAttribute="bottom" constant="5" id="Q7f-nk-rkL"/>
                             <constraint firstAttribute="bottom" secondItem="trg-gA-SOP" secondAttribute="bottom" constant="5" id="RCK-Q9-afP"/>
-                            <constraint firstItem="6Zt-pL-rfC" firstAttribute="top" secondItem="lKd-rG-vxa" secondAttribute="bottom" id="T9j-dQ-Mev"/>
+                            <constraint firstItem="jED-PF-22g" firstAttribute="top" secondItem="6Zt-pL-rfC" secondAttribute="bottom" constant="5" id="WZl-zK-zsf"/>
                             <constraint firstItem="90z-lf-Gwm" firstAttribute="centerY" secondItem="trg-gA-SOP" secondAttribute="centerY" id="Yds-jl-5Js"/>
                             <constraint firstItem="lKd-rG-vxa" firstAttribute="leading" secondItem="4xJ-G8-CmP" secondAttribute="leading" constant="10" id="ZCP-1q-oU9"/>
-                            <constraint firstItem="jED-PF-22g" firstAttribute="top" secondItem="6Zt-pL-rfC" secondAttribute="bottom" constant="5" id="avn-66-BhU"/>
                             <constraint firstItem="6Zt-pL-rfC" firstAttribute="leading" secondItem="4xJ-G8-CmP" secondAttribute="leading" constant="10" id="cIs-Hg-Zfp"/>
                             <constraint firstItem="jED-PF-22g" firstAttribute="leading" secondItem="4xJ-G8-CmP" secondAttribute="leading" constant="10" id="ffU-4j-aMf"/>
                             <constraint firstItem="90z-lf-Gwm" firstAttribute="leading" secondItem="trg-gA-SOP" secondAttribute="trailing" constant="5" id="hgt-cb-kVO"/>
                             <constraint firstAttribute="trailing" secondItem="jED-PF-22g" secondAttribute="trailing" constant="10" id="hiQ-iw-qbI"/>
+                            <constraint firstItem="6Zt-pL-rfC" firstAttribute="top" secondItem="4xJ-G8-CmP" secondAttribute="top" constant="21" id="mxV-8c-eQ8"/>
                             <constraint firstItem="lKd-rG-vxa" firstAttribute="top" secondItem="4xJ-G8-CmP" secondAttribute="top" constant="5" id="xZv-xT-wru"/>
                         </constraints>
                     </view>

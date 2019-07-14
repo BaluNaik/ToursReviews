@@ -21,9 +21,9 @@ class TRListViewController: UIViewController, TRListPresenterOutput, UITableView
         super.viewDidLoad()
         self.setupUI()
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.showLoader(true)
         self.presenter?.eventLoad()
     }
     
@@ -47,6 +47,7 @@ class TRListViewController: UIViewController, TRListPresenterOutput, UITableView
         tbleView.register(UINib(nibName: "TRLoaderTableCell", bundle: nil), forCellReuseIdentifier: "LoaderCell")
         self.tbleView.estimatedRowHeight = 40.0
         self.tbleView.rowHeight = UITableView.automaticDimension
+        self.tbleView.isHidden = true
     }
     
     fileprivate func reloadData() {
@@ -116,6 +117,7 @@ class TRListViewController: UIViewController, TRListPresenterOutput, UITableView
     }
     
     func updateList() {
+        self.tbleView.isHidden = false
         self.reloadData()
     }
     

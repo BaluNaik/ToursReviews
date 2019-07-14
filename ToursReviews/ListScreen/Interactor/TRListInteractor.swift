@@ -51,7 +51,6 @@ class TRListInteractor: NSObject, TRListInteractorInput  {
     func eventLoad() {
         if !TRNetworkWrapper.isConnectedToInternet {
             self.presenter?.showError("Please check your network connection and try later")
-            
             DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
                 exit(1)
             }

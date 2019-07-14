@@ -17,7 +17,6 @@ class TRListPresenter: NSObject,TRListPresenterInput, TRListInteractorOutput {
     //MARK: - TRListPresenterInput
     
     func eventLoad() {
-        self.userInterface?.showLoader(true)
         self.interactor?.eventLoad()
     }
     
