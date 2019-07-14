@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="TRListViewController" id="BYZ-38-t0r" customClass="TRListViewController" customModule="ToursReviews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="74g-be-bwV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="b5W-y5-vH0">
+                                <rect key="frame" x="120.5" y="51" width="173" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="VfX-ID-Xz2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="173" id="nm3-wh-2jt"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Date"/>
+                                    <segment title="Rating"/>
+                                </segments>
+                                <color key="tintColor" red="0.74509803921568629" green="0.34509803921568627" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="actionOnSortTypeChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="u4J-FF-B40"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hTq-Lo-E6q">
+                                <rect key="frame" x="0.0" y="89" width="414" height="773"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="8Hv-Ps-UNh"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="DIJ-tg-UCD"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3GB-Ro-rPd">
+                                <rect key="frame" x="300.5" y="55" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="GwW-Mw-JCA"/>
+                                </constraints>
+                                <state key="normal" image="descending"/>
+                                <connections>
+                                    <action selector="actionOnSortDirectionChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Svk-zE-ukb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94141976299999997" green="0.94141976299999997" blue="0.94141976299999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hTq-Lo-E6q" firstAttribute="trailing" secondItem="ZeX-TZ-Hcd" secondAttribute="trailing" id="3nY-ni-8f1"/>
+                            <constraint firstItem="hTq-Lo-E6q" firstAttribute="bottom" secondItem="ZeX-TZ-Hcd" secondAttribute="bottom" id="BP5-9W-4sA"/>
+                            <constraint firstItem="3GB-Ro-rPd" firstAttribute="height" secondItem="b5W-y5-vH0" secondAttribute="height" multiplier="0.7" id="HYf-zE-02y"/>
+                            <constraint firstItem="3GB-Ro-rPd" firstAttribute="centerY" secondItem="b5W-y5-vH0" secondAttribute="centerY" id="RgQ-MF-Qub"/>
+                            <constraint firstItem="hTq-Lo-E6q" firstAttribute="top" secondItem="b5W-y5-vH0" secondAttribute="bottom" constant="10" id="Sjq-gm-deC"/>
+                            <constraint firstItem="b5W-y5-vH0" firstAttribute="top" secondItem="ZeX-TZ-Hcd" secondAttribute="top" constant="7" id="T5S-KM-h63"/>
+                            <constraint firstItem="3GB-Ro-rPd" firstAttribute="leading" secondItem="b5W-y5-vH0" secondAttribute="trailing" constant="7" id="ewk-0Y-gPd"/>
+                            <constraint firstItem="b5W-y5-vH0" firstAttribute="centerX" secondItem="ZeX-TZ-Hcd" secondAttribute="centerX" id="m8Q-J7-gAl"/>
+                            <constraint firstItem="hTq-Lo-E6q" firstAttribute="leading" secondItem="ZeX-TZ-Hcd" secondAttribute="leading" id="y15-es-N8K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZeX-TZ-Hcd"/>
+                    </view>
+                    <connections>
+                        <outlet property="orderButton" destination="3GB-Ro-rPd" id="LVw-aU-yLX"/>
+                        <outlet property="segmentSortType" destination="b5W-y5-vH0" id="Wxd-n8-9Tx"/>
+                        <outlet property="tbleView" destination="hTq-Lo-E6q" id="XhP-W5-DmS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="descending" width="32" height="32"/>
+    </resources>
+</document>

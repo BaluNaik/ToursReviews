@@ -1,0 +1,6 @@
+framework module Pods_ToursReviews {
+  umbrella header "Pods-ToursReviews-umbrella.h"
+
+  export *
+  module * { export * }
+}

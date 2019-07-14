@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (4.8.2)
+  - FontAwesome.swift (1.7.1)
+  - ObjectMapper (3.5.1)
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - FontAwesome.swift
+  - ObjectMapper
+  - SDWebImage
+  - SVProgressHUD
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - FontAwesome.swift
+    - ObjectMapper
+    - SDWebImage
+    - SVProgressHUD
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  FontAwesome.swift: 8d9792fa2d2347055da35bd97752b3960bd75952
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 5c6e7233211bbd2f89fc4e566d81aa01739ebe48
+
+COCOAPODS: 1.5.3
